@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singup</title>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./CSS/signup.css">
+    <!-- jquery js -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="SignupForm">
+        <h2>Sign Up</h2>
+        <div class="frm">
+            <form action="#" method="post" id="myForm">
+                <div class="email pading">
+                    <div id="emailForm">
+                        <input type="email" id="email" name="email" placeholder="Enter email">
+                    </div>
+                </div>
+                <div class="name pading">
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="text" name="surname" id="surname" placeholder="Surname" required>
+                </div>
+                <div class="db pading">
+                    <label for="date">Enter DOB :</label>
+                    <input type="date" name="date" id="date" placeholder="Date" required>
+                </div>
+                <div class="db pading">
+                    <label for="gender" required>Select Gender:</label>
+                    <input type="radio" name="gender" id="gender" value="Male"><span> Male </span>
+                    <input type="radio" name="gender" id="gender" value="Female"><span> Female </span>
+                    <input type="radio" name="gender" id="gender" value="Other"><span> Other </span>
+
+                    <br><span id="error"></span>
+
+                </div>
+                <div class="pass pading">
+                    <input type="text" name="password_2" id="password_1" placeholder="Enter password" required>
+                    <br>
+                    <input type="password" name="password_2" id="password_2" placeholder="Re enter password" required>
+                </div>
+                <br><span id="passConfirm"></span>
+                <div class="butn pading">
+                    <button type="submit" name="signup" id="signup"> Sign up</button>
+                    <a href="./login.html"> Already an user, login here</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/bf3a18cfbc.js" crossorigin="anonymous"></script>
+
+    <script src="./JS/signup.js"></script>
+</body>
+
+</html>
